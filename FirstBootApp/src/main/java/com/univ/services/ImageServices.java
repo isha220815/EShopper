@@ -1,5 +1,8 @@
 package com.univ.services;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +17,12 @@ public class ImageServices {
 	
 	public Upload insert(Upload up) {
 		return imgRepo.save(up);
+		
+	}
+
+	public List<Upload> getAllImages() {
+	    List<Upload> list = new ArrayList<>();
+	    imgRepo.findAll().forEach(list::add);
+	    return list;
 	}
 }
