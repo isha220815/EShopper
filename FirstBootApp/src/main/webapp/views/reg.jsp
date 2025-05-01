@@ -26,6 +26,7 @@
             <div class="col-lg-7 mb-5">
                 <div class="contact-form">
                    <!--  <div id="success"></div> -->
+                   
                     <form action="reg" method="post" >
                         <div class="control-group">
                             <input type="text" name="cname" class="form-control" id="name" placeholder="Your Name"
