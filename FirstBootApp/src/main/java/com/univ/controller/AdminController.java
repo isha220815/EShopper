@@ -149,6 +149,8 @@ public class AdminController {
 		return mv;
 	}
 	
+	
+	
 	@RequestMapping("/admin_customer")
 	public String viewAllUser(Model mv) {
 		List<Customer> customers= custServ.getAllUser();
@@ -156,4 +158,6 @@ public class AdminController {
 		mv.addAttribute("customers",customers);
 		return "/admin/customer";
 	}
+	
+	
 }
