@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-
 <%@ include file="header.jsp" %>
+
 
     <!-- Featured Start -->
     <div class="container-fluid pt-5">
